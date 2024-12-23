@@ -89,7 +89,7 @@ const ChangePassword = () => {
         />
 
         <CustomButton
-          className="w-full bg-gradient-to-r from-black-200 to-white py-3 rounded-md shadow-md text-white"
+          className="w-full bg-gradient-to-r from-blue-300 to-blue-500 py-3 rounded-md shadow-md text-white"
           type="submit"
           loading={isLoading}
         >
