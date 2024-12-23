@@ -67,13 +67,13 @@ const User = () => {
             <div className="flex justify-center items-center gap-2">
               <CustomButtonWithToolTip
                 text="Suspend User"
-                className="bg-red-600 hover:bg-red-700 text-white"
+                className="bg-cyan-600 hover:bg-cyan-700 text-white"
                 icon={<MonitorPause />}
                 onClick={() => handleSuspendUser(row.original.id)}
               ></CustomButtonWithToolTip>
               <CustomButtonWithToolTip
                 text="Delete User"
-                className="bg-orange-700 hover:bg-orange-800 text-white ml-2"
+                className="bg-red-600 hover:bg-red-700 text-white ml-2"
                 icon={<Trash />}
                 onClick={() => handleDeleteUser(row.original.id)}
               ></CustomButtonWithToolTip>
