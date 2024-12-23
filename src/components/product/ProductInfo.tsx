@@ -76,7 +76,9 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
   return (
     <div className="space-y-6">
       <div>
-        <Badge>{product.category?.name || "Unknown Category"}</Badge>
+        <Badge className="bg-blue-400">
+          {product.category?.name || "Unknown Category"}
+        </Badge>
         <div className="flex items-center gap-4 mt-2">
           <h1 className="text-3xl font-bold">{product.name}</h1>
           <Badge variant="secondary" className="bg-green-100 text-green-800">
@@ -118,7 +120,11 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
         </div>
 
         <div className="flex gap-4">
-          <Button size="lg" className="flex-1" onClick={handleAddToCart}>
+          <Button
+            size="lg"
+            className="flex-1  bg-gradient-to-r from-blue-400 to-blue-600 py-3 rounded-md shadow-md text-white"
+            onClick={handleAddToCart}
+          >
             Add to Cart
           </Button>
           <Button size="lg" variant="outline">

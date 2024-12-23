@@ -76,12 +76,3 @@ export const features = [
     text: "Guaranteed 100% Original Product",
   },
 ];
-
-export const randomColors = ["blue", "pink", "red", "purple", "green"];
-export const randomTags = [
-  "fashion",
-  "sale",
-  "new arrival",
-  "limited edition",
-  "exclusive",
-];
