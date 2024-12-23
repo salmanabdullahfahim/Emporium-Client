@@ -102,7 +102,11 @@ const Cart = () => {
           </div>
         </CardContent>
         <CardFooter className="flex justify-end">
-          <Button size="lg" onClick={handleCheckout}>
+          <Button
+            size="lg"
+            onClick={handleCheckout}
+            className=" bg-gradient-to-r from-blue-400 to-blue-600 py-3 rounded-md shadow-md text-white"
+          >
             Proceed to Checkout
           </Button>
         </CardFooter>
