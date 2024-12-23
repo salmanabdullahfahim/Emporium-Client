@@ -69,11 +69,11 @@ export const features = [
   },
   {
     Icon: Package,
-    text: "1 Day Returns if you change your mind",
+    text: "10 Days Returns if you change your mind",
   },
   {
     Icon: Shield,
-    text: "Guaranteed 100% Organic from natural farms",
+    text: "Guaranteed 100% Original Product",
   },
 ];
 
