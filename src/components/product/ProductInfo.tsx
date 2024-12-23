@@ -15,6 +15,7 @@ import { useToast } from "@/hooks/use-toast";
 import { RootState } from "@/redux/store";
 import Link from "next/link";
 import ProductReplaceAlert from "../shared/ProductReplaceAlert";
+import CustomButtonWithToolTip from "../shared/CustomButtonWithToolTip";
 
 interface ProductInfoProps {
   product: SingleProductData;
@@ -127,11 +128,14 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
           >
             Add to Cart
           </Button>
-          <Button size="lg" variant="outline">
+          <CustomButtonWithToolTip
+            text="Go to this shop"
+            className="bg-transparent hover:bg-white text-black px-4 "
+          >
             <Link href={`/shop-detail/${product.shopId}`}>
               <ShoppingBag className="w-4 h-4" />
             </Link>
-          </Button>
+          </CustomButtonWithToolTip>
         </div>
       </div>
 
