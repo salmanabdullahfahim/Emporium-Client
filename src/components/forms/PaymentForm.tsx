@@ -38,7 +38,11 @@ const PaymentForm: React.FC<PaymentFormProps> = ({
 
       {error && <div className="text-sm text-red-500">{error}</div>}
 
-      <Button type="submit" className="w-full" disabled={!stripe || isLoading}>
+      <Button
+        type="submit"
+        className="w-full  bg-gradient-to-r from-blue-400 to-blue-600 py-3 rounded-md shadow-md text-white"
+        disabled={!stripe || isLoading}
+      >
         {isLoading ? "Processing..." : "Place order"}
       </Button>
     </form>
