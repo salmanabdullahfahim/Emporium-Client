@@ -89,9 +89,9 @@ Emporium serves as an all-encompassing platform for online shopping. Customers c
 3.  **Add Env:**
 
         ```bash
-            NEXT_JWT_SECRET=
-            NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
-            NEXT_BACKEND_BASE_URL=
+            NEXT_JWT_SECRET
+            NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
+            NEXT_BACKEND_BASE_URL
         ```
 
 4.  **Run:**
