@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import FeatureCard from "./FeatureCard";
-import { features, randomTags } from "@/constants";
+import { features } from "@/constants";
 import { Separator } from "../ui/separator";
 import { Button } from "../ui/button";
 import { ShoppingBag } from "lucide-react";
@@ -38,7 +38,6 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
       )
     : 0;
 
-  const productTags = randomTags.slice(0, 3);
   const dispatch = useDispatch();
   const { toast } = useToast();
 
@@ -93,7 +92,7 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
       </div>
 
       <div className="flex items-center gap-2">
-        <span className="text-3xl font-bold text-primary">
+        <span className="text-3xl font-bold text-gray-600">
           ${product.price}
         </span>
         {product.discount > 0 && (
@@ -138,15 +137,6 @@ const ProductInfo: React.FC<ProductInfoProps> = ({
         ))}
       </div>
 
-      <div>
-        <span className="text-sm text-muted-foreground">SKU: </span>
-        <span className="text-sm">{product.productId}</span>
-      </div>
-
-      <div>
-        <span className="text-sm text-muted-foreground">Tags: </span>
-        <span className="text-sm">{productTags.join(", ")}</span>
-      </div>
       {isDialogOpen && (
         <ProductReplaceAlert
           isDialogOpen={isDialogOpen}
