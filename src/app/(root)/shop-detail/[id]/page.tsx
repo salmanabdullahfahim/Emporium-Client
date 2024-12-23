@@ -45,7 +45,7 @@ const ShopDetail: React.FC = () => {
       refetch();
     } catch (error) {
       console.error("error in following", error);
-   
+
       const followError = error as FollowError;
       toast({
         title: "Error",
@@ -102,7 +102,7 @@ const ShopDetail: React.FC = () => {
               height={150}
               className="rounded-full object-cover"
             />
-            <h1 className="text-3xl font-bold text-red-600 ml-4">
+            <h1 className="text-3xl font-bold text-gray-600 ml-4">
               {data?.data?.name || "Shop Name"}
             </h1>
           </div>
