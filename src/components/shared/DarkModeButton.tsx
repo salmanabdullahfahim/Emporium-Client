@@ -10,7 +10,7 @@ export function DarkModeButton() {
   const { theme, setTheme } = useTheme();
 
   const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    setTheme(theme === "light" ? "light" : "light");
   };
 
   return (

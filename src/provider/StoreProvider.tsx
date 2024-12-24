@@ -12,16 +12,9 @@ const StoreProvider = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <Provider store={storeRef.current}>
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="system"
-        enableSystem
-        disableTransitionOnChange
-      >
-        {children}
-        <Toaster />
-        <SyncRecentProducts />
-      </ThemeProvider>
+      {children}
+      <Toaster />
+      <SyncRecentProducts />
     </Provider>
   );
 };

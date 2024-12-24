@@ -82,8 +82,4 @@
   :root {
     /* Light grey */
   }
-
-  .dark {
-    --grayish: 220 10% 20%; /* Dark grey */
-  }
 }
