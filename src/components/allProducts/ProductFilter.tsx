@@ -68,7 +68,7 @@ const ProductFilters = () => {
           step={10}
           className="mt-2 w-[90%] mx-auto"
         />
-        <div className="flex justify-between text-xs mt-2 px-4">
+        <div className="flex justify-between text-xs md:text-base mt-2 px-4">
           <span>${priceRange[0]}</span>
           <span>${priceRange[1]}</span>
         </div>
@@ -87,7 +87,7 @@ const ProductFilters = () => {
           step={5}
           className="mt-2 w-[90%] mx-auto"
         />
-        <div className="flex justify-between text-xs mt-2 px-4">
+        <div className="flex justify-between text-xs md:text-base mt-2 px-4">
           <span>{discountRange[0]}%</span>
           <span>{discountRange[1]}%</span>
         </div>
