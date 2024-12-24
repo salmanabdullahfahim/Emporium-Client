@@ -54,44 +54,50 @@ const ProductFilters = () => {
   };
 
   return (
-    <div className="flex flex-col gap-6 p-4 px-12">
+    <div className="flex flex-col gap-4 p-2 w-full max-w-full overflow-x-hidden md:px-6">
       {/* Price Range Filter */}
-      <div>
-        <h4 className="text-lg font-medium">Filter by Price</h4>
+      <div className="w-full px-2">
+        <h4 className="text-sm sm:text-base font-medium mb-3">
+          Filter by Price
+        </h4>
         <Slider
           value={priceRange}
           onValueChange={(value) => setPriceRange(value)}
           min={0}
           max={1500}
           step={10}
+          className="mt-2 w-[90%] mx-auto"
         />
-        <div className="flex justify-between text-sm">
+        <div className="flex justify-between text-xs mt-2 px-4">
           <span>${priceRange[0]}</span>
           <span>${priceRange[1]}</span>
         </div>
       </div>
 
       {/* Discount Range Filter */}
-      <div>
-        <h4 className="text-lg font-medium">Filter by Discount</h4>
+      <div className="w-full px-2">
+        <h4 className="text-sm sm:text-base font-medium mb-3">
+          Filter by Discount
+        </h4>
         <Slider
           value={discountRange}
           onValueChange={(value) => setDiscountRange(value)}
           min={0}
           max={100}
           step={5}
+          className="mt-2 w-[90%] mx-auto"
         />
-        <div className="flex justify-between text-sm">
+        <div className="flex justify-between text-xs mt-2 px-4">
           <span>{discountRange[0]}%</span>
           <span>{discountRange[1]}%</span>
         </div>
       </div>
 
       {/* Sort Options */}
-      <div>
-        <h4 className="text-lg font-medium">Sort by</h4>
+      <div className="w-full px-2">
+        <h4 className="text-sm sm:text-base font-medium mb-3">Sort by</h4>
         <Select onValueChange={setSortOption} defaultValue="price-asc">
-          <SelectTrigger className="w-full">
+          <SelectTrigger className="w-full text-sm">
             <SelectValue placeholder="Sort Options" />
           </SelectTrigger>
           <SelectContent>
@@ -104,14 +110,18 @@ const ProductFilters = () => {
       </div>
 
       {/* Buttons */}
-      <div className="flex gap-4">
+      <div className="flex flex-col gap-3 mt-4 px-2">
         <Button
           onClick={applyFilters}
-          className="flex-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-md shadow-md text-white  py-4  w-full    gap-2 text-lg"
+          className="w-full bg-gradient-to-r from-blue-400 to-blue-600 text-sm h-10 rounded-md shadow-md text-white"
         >
           Apply Filters
         </Button>
-        <Button onClick={clearFilters} variant="outline" className="flex-1">
+        <Button
+          onClick={clearFilters}
+          variant="outline"
+          className="w-full text-sm h-10"
+        >
           Clear Filters
         </Button>
       </div>
