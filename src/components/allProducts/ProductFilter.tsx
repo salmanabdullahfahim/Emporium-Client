@@ -17,7 +17,7 @@ const ProductFilters = () => {
   const searchParams = useSearchParams();
 
   // States for filters
-  const [priceRange, setPriceRange] = useState<number[]>([0, 500]);
+  const [priceRange, setPriceRange] = useState<number[]>([0, 1500]);
   const [discountRange, setDiscountRange] = useState<number[]>([0, 100]);
   const [sortOption, setSortOption] = useState<string>("price-asc");
 
@@ -48,13 +48,13 @@ const ProductFilters = () => {
   // Handle Clear Filters
   const clearFilters = () => {
     router.push(`/all-products`); // Clear all query parameters
-    setPriceRange([0, 500]); // Reset price range
+    setPriceRange([0, 1500]); // Reset price range
     setDiscountRange([0, 100]); // Reset discount range
     setSortOption("price-asc"); // Reset sort option
   };
 
   return (
-    <div className="flex flex-col gap-6 p-4">
+    <div className="flex flex-col gap-6 p-4 px-12">
       {/* Price Range Filter */}
       <div>
         <h4 className="text-lg font-medium">Filter by Price</h4>
@@ -62,7 +62,7 @@ const ProductFilters = () => {
           value={priceRange}
           onValueChange={(value) => setPriceRange(value)}
           min={0}
-          max={500}
+          max={1500}
           step={10}
         />
         <div className="flex justify-between text-sm">
@@ -105,7 +105,10 @@ const ProductFilters = () => {
 
       {/* Buttons */}
       <div className="flex gap-4">
-        <Button onClick={applyFilters} className="flex-1 bg-primary">
+        <Button
+          onClick={applyFilters}
+          className="flex-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-md shadow-md text-white  py-4  w-full    gap-2 text-lg"
+        >
           Apply Filters
         </Button>
         <Button onClick={clearFilters} variant="outline" className="flex-1">
