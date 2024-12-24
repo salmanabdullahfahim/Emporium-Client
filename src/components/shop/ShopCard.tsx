@@ -28,7 +28,7 @@ export function ShopCard({ shop }: ShopCardProps) {
             src={shop.logo}
             alt={`${shop.name} logo`}
             fill
-            className="object-cover"
+            className="w-full rounded-full"
           />
         </div>
         <div>
@@ -51,7 +51,7 @@ export function ShopCard({ shop }: ShopCardProps) {
       </CardContent>
       <CardFooter>
         <Button
-          className="w-full"
+          className="bg-gradient-to-r from-blue-400 to-blue-600 rounded-md shadow-md text-white  py-3  w-full    gap-2 text-lg"
           onClick={() => router.push(`/shop-detail/${shop.shopId}`)}
         >
           Visit Shop

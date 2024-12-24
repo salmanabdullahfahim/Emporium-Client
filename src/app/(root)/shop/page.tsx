@@ -7,7 +7,6 @@ import React from "react";
 
 const Shop = () => {
   const { data, isLoading } = useGetAllShopQuery({ page: 1, limit: 10 });
- 
 
   return (
     <>
@@ -18,7 +17,7 @@ const Shop = () => {
         />
       </div>
 
-      <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pb-20">
+      <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pb-20 px-12">
         {isLoading
           ? Array.from({ length: 6 }).map((_, index) => (
               <ShopCardSkeleton key={index} />
