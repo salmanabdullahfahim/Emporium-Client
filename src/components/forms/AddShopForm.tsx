@@ -106,7 +106,7 @@ const AddShopForm = ({ onClose }: { onClose: () => void }) => {
         <div className="mt-4">
           <CustomButton
             type="submit"
-            className="bg-primary text-black"
+            className="bg-blue-500 text-white"
             loading={isLoading}
           >
             Create Shop

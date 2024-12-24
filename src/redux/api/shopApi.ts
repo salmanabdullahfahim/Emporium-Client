@@ -23,7 +23,7 @@ export const shopApi = baseApi.injectEndpoints({
       { data: ShopRouteShopData[]; meta: AllShopsApiResponse["meta"] },
       { page: number; limit: number }
     >({
-      query: ({ page, limit }) => `/shop/shopsall?page=${page}&limit=${limit}`,
+      query: ({ page, limit }) => `/shop/all-shops?page=${page}&limit=${limit}`,
       transformResponse: (response: AllShopsApiResponse) => {
         const transformedData = response.data.map((shop) => {
           const {

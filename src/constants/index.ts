@@ -46,11 +46,11 @@ export const sidebarItems: SidebarItems = {
 };
 
 export const selectButtonCategories = [
-  { id: "876bebf5-1207-4f56-9909-cfba8dbaa5c6", name: "Phone" },
-  { id: "0abd1454-db1e-4e9a-ba26-bf940f5fc46c", name: "Fashion" },
-  { id: "78a85c36-349e-41c9-bcc0-1d80e3955621", name: "Home Applience" },
-  { id: "ce25fcb8-2d28-4e00-aa70-16d9dfbf08d4", name: "Beauty Care" },
-  { id: "531928ae-7f3f-4cc2-ad52-08cba97c552e", name: "Sports" },
+  { id: "d1027005-3c3b-41ab-9b0c-c4588555613a", name: "Phone" },
+  { id: "8a3e68b5-38a1-4815-a402-725ac9393b3a", name: "Fashion" },
+  { id: "edfb1493-0919-4eca-b209-ba983810da61", name: "Home Appliance" },
+  { id: "d3c33622-da2c-4c01-86d8-2ac5617ab973", name: "Beauty Care" },
+  { id: "7afb6d31-6f92-48e5-82ef-9e5d0aa56f90", name: "Sports" },
 ];
 
 export const cardCategories = [
