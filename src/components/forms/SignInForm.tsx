@@ -99,7 +99,7 @@ const SignInForm = () => {
       </Link>
 
       <CustomButton
-        className="bg-black  py-8  w-full rounded-md shadow-md text-foreground hover:bg-black text-white  gap-2 text-lg"
+        className="bg-gradient-to-r from-blue-400 to-blue-600 rounded-md shadow-md text-white  py-8  w-full    gap-2 text-lg"
         icon={<FaArrowRightLong />}
         iconPosition="right"
         type="submit"
