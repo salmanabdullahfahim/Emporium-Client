@@ -22,6 +22,10 @@ Emporium serves as an all-encompassing platform for online shopping. Customers c
 - **Payment Integration:** Stripe
 - **Image Storage:** Cloudinary
 
+## Live Url
+
+Check out the live application here: [Live URL](https://emporium-client.vercel.app/)
+
 ## Features
 
 ### Admin:
